@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta mane="viewport" content="widht=device-width, initial-scale = 1">
+	<title>Практическа 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<form>
+			<h2>Регистрация</h2>
+			<div class="line"></div>
+            <label>Имя</label>
+			<div  class="input-container ">
+                    <img src="img/user.png" alt="user" class="ico">
+					<input type="text" name="UserFirstName" required placeholder="FirstName" pattern="[A-Za-zА-Яа-яЁё0-9]{2,12}">
+			</div>
+            
+            <label>Фамилия</label>
+			<div class="input-container ">
+                    <img src="img/user.png" alt="user" class="ico">
+					<input type="text" name="UserLastName" required placeholder="LastName" pattern="[A-Za-zА-Яа-яЁё0-9]{2,16}">
+			</div>
+            
+            <label>Ваш логин</label>
+			<div class="input-container ">
+                    <img src="img/user.png" alt="user" class="ico">
+					<input type="text" name="UserLogin" required placeholder="myname1" pattern="^[A-Za-zА-Яа-яЁё0-9]${3,14}">
+			</div>
+            
+            <label>Ваш e-mail</label>
+			<div class="input-container ">
+                    <img src="img/emails.png" alt="email" class="ico">
+					<input type="email" name="UserEmail" required placeholder="sitehere.ru@my.com">
+			</div>
+            
+            <label>Ваш пароль</label>
+			<div class="input-container ">
+                    <img src="img/key.png" alt="key" class="ico">
+					<input type="password" name="UserPassword" required placeholder="12345Aa!" pattern="(?=^.{5,10}$)(|(?=.*\w+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*">
+			</div>
+            
+            <label>Подвердите ваш пароль</label>
+			<div class="input-container ">
+                    <img src="img/key.png" alt="key" class="ico">
+					<input type="password" name="UserRePassword" required placeholder="12345Aa!" pattern="(?=^.{5,10}$)(|(?=.*\w+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*">
+			</div>
+			<div class="checkbox-container">
+				<input type="checkbox" name="Subscribe" class="checkB" id="SubCheck1">
+				<label for="SubCheck1">Подписаться на новости</label>
+			</div>
+			<div class="checkbox-container">
+				<input type="checkbox" name="Subscribe" class="checkB" id="SubCheck2">
+				<label for="SubCheck2">Подписаться на акции</label>
+			</div>
+			<div class="checkbox-container">
+				<input type="checkbox" name="Subscribe" class="checkB" id="SubCheck3">
+				<label for="SubCheck3">Подписаться на мероприятия</label>
+			</div>
+			<input type="submit" name="button" class="button" value="Регистрация">
+		</form>
+</body>
+</html>
