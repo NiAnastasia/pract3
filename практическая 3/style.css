@@ -1,11 +1,12 @@
 form{
+    font-family: Arial;
     border: 1px solid #EBE6E6;
     width: 300px;
     background: #ECECEF;
 }
 
 h2{
-    color: #36324D;
+    color: #0C7384;
     border-bottom: 2px;
     text-align: center; 
 }
